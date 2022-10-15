@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form spedizione</title>
+</head>
+<body>
+
+
+    <form method="post" action="https://postb.in/1665821727105-2350047533400" id="spedizione" autocomplete="on">
+        <div>
+            <div style="display: inline">Campo</div>
+            <div style="display: inline">Input</div>
+        </div>
+        <div>
+            <div style="display: inline">
+                <label for="name">Nome*</label>
+            </div>
+            <div style="display: inline">
+                <input type="text" id="name" name="name" placeholder="Nome" required>
+            </div>
+        </div>
+
+        <div>
+            <div style="display: inline">
+                <label for="lastname">Cognome*</label>
+            </div>
+            <div style="display: inline">
+                <input type="lastname" id="lastname" name="lastname" placeholder="Cognome" required>
+            </div>
+        </div>
+
+        <div>
+            <div style="display: inline">
+                <label for="address">Indirizzo:*</label>
+            </div>
+            <div style="display: inline">
+                <input type="text" name="address" id="address" placeholder="Indirizzo" required>
+            </div>
+        </div>
+
+        <div>
+            <div style="display: inline">
+                <label for="po">Civico</label>
+            </div>
+            <div style="display: inline">
+                <input type="number" name="po" id="po" placeholder="Civico">
+            </div>
+        </div>
+
+
+        <div>
+            <div style="display: inline">
+                <label for="cap">Cap*</label>
+            </div>
+            <div style="display: inline">
+                <input type="number" name="cap" id="cap" placeholder="CAP" required>
+            </div>
+        </div>
+
+        <div>
+            <div style="display: inline">
+                <label for="city">Città*</label>
+            </div>
+            <div style="display: inline">
+                <input type="text" name="city" id="city" placeholder="Città" required>
+            </div>
+        </div>
+
+        <div>
+            <div style="display: inline">
+                <label for="country">Nazione*</label>
+            </div>
+            <div style="display: inline">
+                <input type="text" name="country" id="country" placeholder="Nazione" required>
+            </div>
+        </div>
+
+        <div>
+            <div style="display: inline">
+                <label for="province">Provincia*</label>
+            </div>
+            <div style="display: inline">
+                <select name="province" id="province" placeholer="Provincia" required>
+                    <option value="MI">Milano</option>
+                    <option value="RM">Roma</option>
+                    <option value="TO">Torino</option>
+                    <option value="OTHER" selected>Altro</option>
+                </select>
+
+            </div>
+        </div>
+
+        <div>
+            <div style="display: inline">
+                <label for="telefono">Telefono*</label>
+            </div>
+            <div style="display: inline">
+                <input type="tel" name="telefono" id="telefono" placeholder="Telefono" required>
+            </div>
+        </div>
+
+        <div>
+            <div style="display: inline">
+                <label for="email">Email*</label>
+            </div>
+            <div style="display: inline">
+                <input type="email" name="email" id="email" placeholder="email" required>
+            </div>
+        </div>
+
+        <div>
+            <div style="display: inline">
+                <label for="note">Note</label>
+            </div>
+            <div style="display: inline">
+                <textarea name="note" id="note" cols="30" rows="10" placeholder="note"></textarea>
+            </div>
+        </div>
+
+        <div>
+            <div style="display: inline">
+                <input type="submit" value="Invia">
+            </div>
+        </div>
+
+    </form>
+
+
+<button type="reset" form="spedizione">Reset</button>
+
+
+</body>
+</html>
