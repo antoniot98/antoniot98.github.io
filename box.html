@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin-top:0px;
+            background-color: red;
+            width:calc(100% - 5px*4);
+            height: 160px;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .main{
+            border:1px dotted black;
+            margin: 5px;
+            width:calc(70% - 5px*2 - 2px);
+            height: 150px;
+            float: left;
+            background-color: green;
+        }
+        .sidebar{
+            border:1px dotted black;
+            margin: 5px;
+            margin-left: 0px;
+            width: calc(30% - 5px - 2px);
+            height: 150px;
+            float:right;
+            background-color:aliceblue;
+          }
+        .main_padding{
+            padding: 10px;
+            box-sizing: border-box;
+            width:calc(70% - 5px*2);
+        }
+        .sidebar_padding{
+            padding: 10px;
+            box-sizing: border-box;
+            width: calc(30% - 5px);
+        }
+
+        [name="bottom"]{
+            margin-bottom:0px;
+        }
+
+        .clearfix{
+            clear: both;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <div class="main" name="bottom">Main</div> 
+        <div class="sidebar" name="bottom">Sidebar</div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="container">
+        <div class="main main_padding">Main</div> 
+        <div class="sidebar sidebar_padding">Sidebar</div>
+        <div class="clearfix"></div>
+    </div>
+</body>
+</html>
